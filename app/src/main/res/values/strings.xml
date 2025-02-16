@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ECommerce</string>
+    <string name="intro_title">Choose your<font color="#6033ba"> style\n to got your life</font></string>
+    <string name="intro_text">E-Commerce App for you\n to got your style that\n you want</string>
+    <string name="intro_signin">Already have account ?<font color="#6033ba"> Sign in</font></string>
+</resources>
