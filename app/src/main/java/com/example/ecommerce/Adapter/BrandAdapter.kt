@@ -22,7 +22,7 @@ class BrandAdapter(val items: MutableList<BrandModel>):RecyclerView.Adapter<Bran
     private var lastSelectedPosition = -1
     private lateinit var context:Context
 
-    class Viewholder(val binding:ViewholderBrandBinding): RecyclerView.ViewHolder(binding.root) {
+    inner class Viewholder(val binding:ViewholderBrandBinding): RecyclerView.ViewHolder(binding.root) {
 
     }
 

@@ -15,7 +15,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingBottom="100dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -74,7 +75,7 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="@+id/viewpagerSlider" />
 
                 <androidx.viewpager2.widget.ViewPager2
                     android:id="@+id/viewpagerSlider"
@@ -107,10 +108,10 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginTop="16dp"
                 android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -118,10 +119,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
+                    android:text="Offical Brand"
                     android:textColor="@color/black"
-                    android:text="Offical Brand" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView7"
@@ -129,7 +130,7 @@
                     android:layout_height="wrap_content"
 
                     android:text="See All"
-                    android:textColor="@color/purple"/>
+                    android:textColor="@color/purple" />
             </LinearLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -155,14 +156,16 @@
                     app:layout_constraintBottom_toBottomOf="@+id/viewBrand"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_marginStart="24dp"
-                android:layout_marginEnd="24dp"
-                android:layout_marginTop="16dp"
                 android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
                 android:orientation="horizontal">
 
                 <TextView
@@ -170,10 +173,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:textStyle="bold"
-                    android:textSize="18sp"
+                    android:text="Recommendation"
                     android:textColor="@color/black"
-                    android:text="Recommendation" />
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:id="@+id/textView71"
@@ -181,7 +184,7 @@
                     android:layout_height="wrap_content"
 
                     android:text="See All"
-                    android:textColor="@color/purple"/>
+                    android:textColor="@color/purple" />
             </LinearLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -192,6 +195,7 @@
                     android:id="@+id/viewPopular"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_marginStart="16dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -256,6 +260,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/cartBtn"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.2"
@@ -274,7 +279,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Explorer"
+                        android:text="Cart"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="10sp" />
@@ -299,7 +304,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Explorer"
+                        android:text="Wishlist"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="10sp" />
@@ -324,7 +329,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Explorer"
+                        android:text="Order"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="10sp" />
@@ -349,7 +354,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Explorer"
+                        android:text="Account"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="10sp" />
